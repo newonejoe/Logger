@@ -25,10 +25,6 @@
           <GenericArgument Name="System.Boolean,System.Private.CoreLib" />
         </Method>
       </Type>
-
-      <!--<Type Name="Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor+ShaperProcessingExpressionVisitor" Dynamic="Required All">
-        <Method Name="IncludeReference" Dynamic="Required All"></Method>
-      </Type>-->
     </Assembly>
 
     <Assembly Name="Microsoft.EntityFrameworkCore.Sqlite" Dynamic="Required All" />
@@ -133,25 +129,9 @@
         </Method>
       </Type>
 
-      <!--DbSet<ProductionRecord> ClrPropertyGetterFactory --><!--
-      <Type Name="Microsoft.EntityFrameworkCore.Metadata.Internal.ClrPropertyGetterFactory" Dynamic="Required All">
-        <Method Name="CreateGeneric" Dynamic="Required All">
-          <GenericArgument Name="Logger.Model.ProductionRecord,Logger" />
-          <GenericArgument Name="System.Int32,System.Private.CoreLib" />
-          <GenericArgument Name="System.Int32,System.Private.CoreLib" />
-        </Method>
-      </Type>
-      --><!--DbSet<ProductionRecord> ClrPropertyGetterFactory --><!--
-      <Type Name="Microsoft.EntityFrameworkCore.Metadata.Internal.ClrPropertyGetterFactory" Dynamic="Required All">
-        <Method Name="CreateGeneric" Dynamic="Required All">
-          <GenericArgument Name="Logger.Model.ProductionRecord,Logger" />
-          <GenericArgument Name="System.DateTime,System.Private.CoreLib" />
-          <GenericArgument Name="System.DateTime,System.Private.CoreLib" />
-        </Method>
-      </Type>-->
-
       
       <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.Snapshot`1[[System.Int32,System.Private.CoreLib]]" Dynamic="Required All" />
+      <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.Snapshot`1[[System.Guid,System.Private.CoreLib]]" Dynamic="Required All" />
       <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.Snapshot`2[[System.Int32,System.Private.CoreLib],[System.String,System.Private.CoreLib]]" Dynamic="Required All" />
       <!--DbSet<JobState> EFCore ChangeTracking Snapshot-->
       <Type Name="Microsoft.EntityFrameworkCore.ChangeTracking.Internal.Snapshot`7[[System.Int32,System.Private.CoreLib],[System.String,System.Private.CoreLib],[System.DateTime,System.Private.CoreLib],[System.String,System.Private.CoreLib],[System.String,System.Private.CoreLib],[System.String,System.Private.CoreLib],[System.String,System.Private.CoreLib]]" Dynamic="Required All" />
